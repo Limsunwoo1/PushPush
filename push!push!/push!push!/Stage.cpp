@@ -151,6 +151,14 @@ Map* Stage::StageLoad()
         map = Load(filepath);
     }
     break;
+
+    case MAXSTAGE:
+    {
+        fclose(fp);
+        Application::GetInstance()->SetPlaySceneNumber((int)SCENETYPE::ENDING);
+        return map;
+    }
+    break;
     }
 
     fclose(fp);

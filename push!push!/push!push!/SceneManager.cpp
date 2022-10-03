@@ -2,8 +2,6 @@
 #include "Application.h"
 #include "Ball.h"
 
-#define MAXSTAGE 5
-
 SceneManager* SceneManager::mInstance = nullptr;
 
 SceneManager::SceneManager()
@@ -116,7 +114,7 @@ void SceneManager::NextStage()
     {
         std::string input = std::to_string(selectStage);
 
-        if (selectStage > MAXSTAGE)
+        if (selectStage >= MAXSTAGE)
         {
             Application::GetInstance()->SetPlaySceneNumber((int)SCENETYPE::ENDING);
         }
