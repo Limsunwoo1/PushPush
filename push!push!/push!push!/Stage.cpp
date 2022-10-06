@@ -152,6 +152,20 @@ Map* Stage::StageLoad()
     }
     break;
 
+    case 6:
+    {
+        const char filepath[256] = { "..\\Stages\\Stage06.txt" };
+        map = Load(filepath);
+    }
+    break;
+
+    case 7:
+    {
+        const char filepath[256] = { "..\\Stages\\Stage07.txt" };
+        map = Load(filepath);
+    }
+    break;
+
     case MAXSTAGE:
     {
         fclose(fp);
