@@ -17,7 +17,7 @@
 #define GOTO_XY(x, y) SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), COORD{(short)x, (short)y})
 #define SET_COLOR(color) SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color)
 
-#define MAXSTAGE 6
+#define MAXSTAGE 8
 
 enum COLOR
 {
